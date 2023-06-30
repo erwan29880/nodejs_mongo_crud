@@ -1,0 +1,13 @@
+version: '3.6'
+
+services:
+  bddmongo:
+    image: mongo
+    container_name: bddmongoCrud
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    volumes: 
+      - ./mongo:/data/db
+    ports:
+      - 27018:27017

@@ -1,0 +1,78 @@
+:root {
+    --main-bg-color: rgb(209, 222, 226);
+    --table-td-hover-color: rgb(161, 166, 166);
+}
+
+
+body {
+    width: 100%;
+    font-family: 'McLaren', serif;
+}
+
+section {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+    border: 1px solid rgb(140, 127, 127);
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 2px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(131, 93, 102);
+}
+
+h1 {
+    text-align: center;
+}
+
+section p {
+  font-weight: bold;
+}
+
+
+/* tableau */
+
+.tab {
+    width: 90%;
+    max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: auto;
+    margin-bottom:10px;
+    margin-top: 30px;
+}
+
+.tableau_1{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+
+.tableau_1 tbody tr:nth-child(odd) {
+    background-color: var(--main-bg-color);
+}
+  
+.tableau_1 tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.tableau_1 thead th{
+  padding: 2px;
+  text-align: right;
+  border: 1px inset black;
+}
+  
+.tableau_1 tbody td{
+  padding: 2px;
+  text-align: right;
+  border:0.1px solid var(--table-td-hover-color);
+}
+
+.tableau_1 thead th:hover{
+  background-color: var(--table-td-hover-color)
+}
+
+.tableau_1 tbody td:hover{
+  background-color: var(--table-td-hover-color)
+}

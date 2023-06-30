@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/crud.css">
+    <link href='https://fonts.googleapis.com/css?family=McLaren' rel='stylesheet' type='text/css'>
+    <script src="/js/tri.js" defer></script>
+    <script src="/js/mongo.js" defer></script>
+
+</head>
+<body>
+    
+    <section>
+        <h1>Crud with Mongo</h1>
+    </section>
+
+    <section>
+        <p>POST - Entrer un nouvel utilisateur :</p>
+
+        <form action="/mongoPost" method="post">
+            <label for="prenom">Prénom :</label>
+            <input type="text" name="prenom" id="prenom">
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom">
+            <label for="montant">Montant :</label>
+            <input type="text" name="montant" id="montant">
+            <input type="submit" value="go">
+        </form>
+    </section>
+
+    <section>
+        <p>PUT - Entrer un nouveau montant pour un utilisateur :</p>
+            <label for="prenomPut">Prénom :</label>
+            <input type="text" name="prenomPut" id="prenomPut">
+            <label for="nomPut">Nom :</label>
+            <input type="text" name="nomPut" id="nomPut">
+            <label for="montantPut">Montant :</label>
+            <input type="text" name="montantPut" id="montantPut">
+            <button id="putForm">go</button>
+    </section>
+
+    <section>
+        <p>DELETE - supprimer un utilisateur</p>
+            <label for="prenomDel">Prénom :</label>
+            <input type="text" name="prenomDel" id="prenomDel">
+            <label for="nomPut">Nom :</label>
+            <input type="text" name="nomDel" id="nomDel">
+            <button id="delForm">go</button>
+    </section>
+
+    <section id="first">
+        <button class="refresh" id="refresh">refresh Get</button>       
+    </section>
+
+    <footer></footer>
+
+</body>
+</html>
